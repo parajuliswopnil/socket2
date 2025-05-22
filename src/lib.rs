@@ -68,6 +68,7 @@ use std::marker::PhantomData;
 #[cfg(not(target_os = "redox"))]
 use std::mem;
 use std::mem::MaybeUninit;
+#[cfg(not(feature = "twine"))]
 use std::net::SocketAddr;
 use std::ops::{Deref, DerefMut};
 use std::time::Duration;
